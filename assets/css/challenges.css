@@ -1,0 +1,341 @@
+/* Eric Meyer's Reset CSS v2.0
+========================================================================= */
+/*#region*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+
+/* Make box-sizing "border-box" as default */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*#endregion*/
+
+
+
+/* MAIN TAGS FORMATTING
+========================================================================= */
+/*#region*/
+html {
+  font-size: 13px;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  border-top: 0.5px solid #555;
+  margin: 1.2rem 0;
+}
+
+/*Prism.js*/
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+}
+
+.token.number {
+  color: #f50;
+}
+
+/*#endregion*/
+
+
+
+
+/* LAYOUT
+========================================================================= */
+/*#region*/
+main {
+  width: 100%;
+  max-width: 1024px;
+  padding: 1em 4%;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+}
+
+.code-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 300;
+  color: #ccc;
+}
+
+.title-inline {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/*#endregion*/
+
+
+
+/* links */
+a {
+  text-decoration: none;
+  color: darkgrey;
+  outline: none;
+  transition: color 0.5s ease;
+  /* it is the litile animiation when i point on the link */
+}
+
+a:hover {
+  color: gray;
+}
+
+
+main a {
+  color: OrangeRed;
+}
+
+main nav {
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+}
+
+#header {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #0b101d;
+  line-height: 1;
+}
+
+#logo {
+  color: wheat;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.55rem;
+  text-align: left;
+  padding: 1.5rem 1.5rem 0.2rem;
+}
+
+#sub-logo {
+  color: yellowgreen;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 0.2rem 1.5rem 1.5rem;
+}
+
+#footer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #0b101d;
+  color: wheat;
+  font-family: 'Raleway', sans-serif;
+  padding: 1rem;
+
+}
+
+#footer-icons {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+#list {
+  line-height: 2;
+  background-color: #0b101d;
+  margin: 2rem 2rem;
+  padding: 2rem 3rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+#list li a {
+  color: yellowgreen;
+}
+
+#list li a:hover {
+  color: #f50;
+}
+
+/* HELPING CLASSES */
+h1 {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.x-margin {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.y-margin {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#list h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: whitesmoke;
+  /* text-align: center; */
+}
+
+header h1 a {
+  color: wheat;
+}
+
+
+header h1 a:hover {
+  color: #eda735;
+}
