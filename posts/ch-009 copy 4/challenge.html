@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CHANGE THE TITLE BELOW -->
-  <title>Is today Tuesday</title>
+  <title>Is the Number Less than or Equal to Zero?</title>
   <link rel="stylesheet" href="../../assets/icons/style.css">
   <link rel="stylesheet" href="../../assets/plugins/prismjs/prism.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap" rel="stylesheet">
@@ -38,11 +38,13 @@
 
   <main>
     <div class="x-margin">
-      <h1 class="y-margin">Is today Tuesday</h1>
+      <h1 class="y-margin">Is the Number Less than or Equal to
+        Zero?</h1>
       <!-- CHANGE THE TITLE IN THE SPAN BELOW -->
       <h2 class="bold">THE CHALLENGE</h2>
       <!-- CHANGE THE CHALLENGE DESCRIPTION BELOW -->
-      <p>Using the ternary operator create a condition who checks if today is Tuesday.</p>
+      <p>Create a function that takes a number as its only argument and returns true if it's less than or equal to zero,
+        otherwise return false.</p>
       <p class="y-margin"><span class="bold">Please notice</span> that I use <code
           class="language-javascript">print</code> in the code instead of <code
           class="language-javascript">console.log</code> to show the result in my built-in console <a
@@ -56,19 +58,21 @@
       <h2 class="bold">THE CODE</h2>
       <pre class="language-javascript">
         <code>
-          // WEEK 5 → DAY 2
-          // Using the ternary operator create a condition who checks if today is Tuesday
-                    
-          function todayIsTuesday() {
+          // week 4, day 4-5, challange 1
+          // Is the Number Less than or Equal to Zero?
           
-            let today = new Date();
-            let day = today.getDay();
+          function lessThanOrEqualToZero(num) {
+            if (num <= 0) {
+              lessOrEqual = "true"
+            } else {
+              lessOrEqual = "false"
+            };
+            print(num + " is less or equal Zero ➞ " + lessOrEqual);
+          }
           
-            return (day === 2 ? "Yes; today is Tuesday" : "No; today is not Tuesday");
-          
-          };
-          
-          print(todayIsTuesday());
+          lessThanOrEqualToZero(5);
+          lessThanOrEqualToZero(0);
+          lessThanOrEqualToZero(-2);
         </code>
       </pre>
     </div>

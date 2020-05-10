@@ -1,5 +1,4 @@
-// week 4, day 2, challange 2 Objects
-// Calculate the Profit
+// Estimate the Profit
 
 function profit(costPrice, sellPrice, inventory) {
   let totalSales = inventory * sellPrice;
@@ -7,8 +6,7 @@ function profit(costPrice, sellPrice, inventory) {
   let profit = totalSales - totalCost;
   print("Your estimated Profit/Loss is " + profit)
 
-  // to show the result on your console use
-  // console.log("Your Profit/Loss is " + profit)
+
 };
 profit(
   prompt("How much is a unit cost you?"),

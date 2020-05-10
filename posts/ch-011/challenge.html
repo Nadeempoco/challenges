@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CHANGE THE TITLE BELOW -->
-  <title>Is today Tuesday</title>
+  <title>Strictly Increasing or Decreasing</title>
   <link rel="stylesheet" href="../../assets/icons/style.css">
   <link rel="stylesheet" href="../../assets/plugins/prismjs/prism.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap" rel="stylesheet">
@@ -38,11 +38,12 @@
 
   <main>
     <div class="x-margin">
-      <h1 class="y-margin">Is today Tuesday</h1>
+      <h1 class="y-margin">Strictly Increasing or Decreasing</h1>
       <!-- CHANGE THE TITLE IN THE SPAN BELOW -->
       <h2 class="bold">THE CHALLENGE</h2>
       <!-- CHANGE THE CHALLENGE DESCRIPTION BELOW -->
-      <p>Using the ternary operator create a condition who checks if today is Tuesday.</p>
+      <p>Create a function that takes an array and determines whether it's strictly increasing, strictly decreasing, or
+        neither.</p>
       <p class="y-margin"><span class="bold">Please notice</span> that I use <code
           class="language-javascript">print</code> in the code instead of <code
           class="language-javascript">console.log</code> to show the result in my built-in console <a
@@ -56,19 +57,22 @@
       <h2 class="bold">THE CODE</h2>
       <pre class="language-javascript">
         <code>
-          // WEEK 5 → DAY 2
-          // Using the ternary operator create a condition who checks if today is Tuesday
-                    
-          function todayIsTuesday() {
+          // WEEK 5 → DAY 2 dont publish nadeem
+          // Strictly Increasing or Decreasing
           
-            let today = new Date();
-            let day = today.getDay();
-          
-            return (day === 2 ? "Yes; today is Tuesday" : "No; today is not Tuesday");
-          
+          function check(arr) {
+            if (new Set(arr).size !== arr.length) {
+              return 'neither';
+            } else if (arr[1] > arr[0]) {
+              return 'increasing';
+            } else {
+              return 'decreasing';
+            }
           };
           
-          print(todayIsTuesday());
+          print(check([1, 2, 3, 4, 5]));
+          print(check([5, 4, 3, 2, 1]));
+          print(check([1, 2, 2, 4, 5]));
         </code>
       </pre>
     </div>
@@ -82,9 +86,9 @@
 
     <nav class="y-margin">
       <ul class="flex">
-        <li><a href="../ch-008/challenge.html">
+        <li><a href="../ch-010/challenge.html">
             <-PREVIOUS CHALLENGE</a> </li> <li><a href="../../index.html">HOME</a></li>
-        <li><a href="../ch-010/challenge.html">NEXT CHALLENGE-></a></li>
+        <li><a href="../ch-012/challenge.html">NEXT CHALLENGE-></a></li>
       </ul>
     </nav>
 

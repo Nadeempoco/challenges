@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CHANGE THE TITLE BELOW -->
-  <title>Is today Tuesday</title>
+  <title>Estimating the profit</title>
   <link rel="stylesheet" href="../../assets/icons/style.css">
   <link rel="stylesheet" href="../../assets/plugins/prismjs/prism.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap" rel="stylesheet">
@@ -38,11 +38,12 @@
 
   <main>
     <div class="x-margin">
-      <h1 class="y-margin">Is today Tuesday</h1>
+      <h1 class="y-margin">Estimating the profit</h1>
       <!-- CHANGE THE TITLE IN THE SPAN BELOW -->
       <h2 class="bold">THE CHALLENGE</h2>
       <!-- CHANGE THE CHALLENGE DESCRIPTION BELOW -->
-      <p>Using the ternary operator create a condition who checks if today is Tuesday.</p>
+      <p>This is my improved version of "calculate the profit" challenge. In this app, you are asked to enter three
+        values, and the app will give you an estimation of your profit.</p>
       <p class="y-margin"><span class="bold">Please notice</span> that I use <code
           class="language-javascript">print</code> in the code instead of <code
           class="language-javascript">console.log</code> to show the result in my built-in console <a
@@ -56,19 +57,22 @@
       <h2 class="bold">THE CODE</h2>
       <pre class="language-javascript">
         <code>
-          // WEEK 5 → DAY 2
-          // Using the ternary operator create a condition who checks if today is Tuesday
-                    
-          function todayIsTuesday() {
+          // Estimate the Profit
+
+          function profit(costPrice, sellPrice, inventory) {
+            let totalSales = inventory * sellPrice;
+            let totalCost = inventory * costPrice;
+            let profit = totalSales - totalCost;
+            print("Your estimated Profit/Loss is " + profit)
           
-            let today = new Date();
-            let day = today.getDay();
-          
-            return (day === 2 ? "Yes; today is Tuesday" : "No; today is not Tuesday");
-          
+            // to show the result on your console use
+            // console.log("Your Profit/Loss is " + profit)
           };
-          
-          print(todayIsTuesday());
+          profit(
+            prompt("How much is a unit cost you?"),
+            prompt("What is the selling price of a unit?"),
+            prompt("How many units are you predicting to sell?")
+          );
         </code>
       </pre>
     </div>
@@ -82,9 +86,9 @@
 
     <nav class="y-margin">
       <ul class="flex">
-        <li><a href="../ch-008/challenge.html">
+        <li><a href="../ch-011/challenge.html">
             <-PREVIOUS CHALLENGE</a> </li> <li><a href="../../index.html">HOME</a></li>
-        <li><a href="../ch-010/challenge.html">NEXT CHALLENGE-></a></li>
+        <li><a href="../ch-013/challenge.html">NEXT CHALLENGE-></a></li>
       </ul>
     </nav>
 
